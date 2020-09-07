@@ -18,7 +18,7 @@ mod tests {
             ]; 
             change_elem(&mut a);
 
-        assert_eq!(a[[0,0]],2.0, "");
+        assert_eq!(a[[0,0]],2.0);
     }
 }
 
