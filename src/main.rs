@@ -1,3 +1,9 @@
+use ndarray::prelude::*;
+
 fn main() {
-    println!("Hello, world!");
+    let a = array![
+                [1.,2.,3.], 
+                [4.,5.,6.],
+            ]; 
+    println!("{:?}", a);
 }
