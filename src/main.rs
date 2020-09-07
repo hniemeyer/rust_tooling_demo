@@ -6,6 +6,22 @@ fn change_elem(x: &mut Array2<f64>) {
 
 }
 
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn addition() {
+        let mut a = array![
+                [1.,2.,3.], 
+                [4.,5.,6.],
+            ]; 
+            change_elem(&mut a);
+
+        assert_eq!(a[[0,0]],2.0, "");
+    }
+}
+
 fn main() {
     let mut a = array![
                 [1.,2.,3.], 
