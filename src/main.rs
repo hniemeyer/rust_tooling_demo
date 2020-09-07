@@ -1,4 +1,5 @@
 use ndarray::prelude::*;
+mod geometry;
 
 fn change_elem(x: &mut Array2<f64>) {
 
@@ -27,6 +28,8 @@ fn main() {
                 [1.,2.,3.], 
                 [4.,5.,6.],
             ]; 
+    let rect = geometry::Rectangle::new(3.2, 4.5);
     change_elem(&mut a);
     println!("{:?}", a);
+    println!("{}", rect.area());
 }
