@@ -1,13 +1,18 @@
+/// A geomtric rectangle
 pub struct Rectangle {
+    /// length of the rectangle
     length: f64,
+    /// width of the rectangle
     width: f64
 }
 
 impl Rectangle {
+    /// create a new rectangle.
     pub fn new(l: f64, w: f64) -> Self {
         Rectangle {length: l, width: w}
     }
 
+    /// calculate the area of the rectangle
     pub fn area(&self) -> f64 {
         self.length * self.width
     }
