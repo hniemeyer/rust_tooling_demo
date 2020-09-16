@@ -1,4 +1,6 @@
+use serde::{Serialize, Deserialize};
 /// A geomtric rectangle
+#[derive(Serialize, Deserialize, Debug)]
 pub struct Rectangle {
     /// length of the rectangle
     length: f64,
