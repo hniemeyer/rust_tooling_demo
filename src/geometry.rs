@@ -18,6 +18,10 @@ impl Rectangle {
     pub fn area(&self) -> f64 {
         self.length * self.width
     }
+
+    pub fn circumference(&self) -> f64 {
+        2.0 * self.length + 2.0 * self.width
+    }
 }
 
 #[cfg(test)]
@@ -28,5 +32,11 @@ mod tests {
     fn area() {
         let my_rect = Rectangle::new(2.0, 2.0);
         assert_eq!(my_rect.area(), 4.0);
+    }
+
+    #[test]
+   fn circumference() {
+        let my_rect = Rectangle::new(2.0, 3.0);
+        assert_eq!(my_rect.circumference(), 10.0)
     }
 }
