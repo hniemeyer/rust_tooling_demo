@@ -1,16 +1,21 @@
 use serde::{Deserialize, Serialize};
 
+/// A two dimensional point. 
 #[derive(Serialize, Deserialize, Debug)]
 struct Point {
+    /// x coordinate of the point
     x: f64,
+    /// y coordinate of the point
     y: f64,
 }
 
 impl Point {
+    /// Create a new point from two floats.
     fn new(xx: f64, yy: f64) -> Self {
         Point { x: xx, y: yy }
     }
 
+    /// Move the point by dx in x direction and by dy in y direction.
     fn move_direction(&mut self, dx: f64, dy: f64) {
         self.x += dx;
         self.y += dy;
@@ -39,15 +44,17 @@ impl Rectangle {
         }
     }
 
-    /// calculate the area of the rectangle
+    /// Calculate the area of the rectangle.
     pub fn area(&self) -> f64 {
         self.length * self.width
     }
 
+    /// Calculate the circumference of the rectangle.
     pub fn circumference(&self) -> f64 {
         2.0 * self.length + 2.0 * self.width
     }
 
+    /// Move the rectangle by dx in x direction and by dy in y direction.
     pub fn move_direction(&mut self, dx: f64, dy: f64) {
         self.center.move_direction(dx, dy);
     }
