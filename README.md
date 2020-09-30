@@ -3,6 +3,8 @@
 This repository illustrates the use of the cargo tool for Rust as part of an "Intro to Rust" presentation whose
 slides can be found [here](https://github.com/hniemeyer/RustForCppDevs).
 
+In order to install Rust on your system have a look [here](https://www.rust-lang.org/tools/install).
+
 Run
 
 ```bash
