@@ -10,3 +10,9 @@ cargo build
 ```
 
 in order to build the project. 
+Run 
+
+```bash
+cargo run
+```
+to build and execute the program.
