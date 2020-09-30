@@ -16,3 +16,9 @@ Run
 cargo run
 ```
 to build and execute the program.
+Run 
+
+```bash
+cargo test
+```
+to execute the tests.
