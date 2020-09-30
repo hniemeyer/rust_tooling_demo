@@ -6,7 +6,7 @@ slides can be found [here](https://github.com/hniemeyer/RustForCppDevs).
 Run
 
 ```bash
-cargo boild
+cargo build
 ```
 
 in order to build the project. 
