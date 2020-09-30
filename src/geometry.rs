@@ -1,4 +1,5 @@
 use serde::{Deserialize, Serialize};
+use assert_approx_eq::assert_approx_eq;
 
 /// A two dimensional point. 
 #[derive(Serialize, Deserialize, Debug)]
@@ -67,28 +68,28 @@ mod tests {
     #[test]
     fn area() {
         let my_rect = Rectangle::new(2.0, 2.0, 0.0, 0.0);
-        assert_eq!(my_rect.area(), 4.0);
+        assert_approx_eq!(my_rect.area(), 4.0);
     }
 
     #[test]
     fn circumference() {
         let my_rect = Rectangle::new(2.0, 3.0, 0.0, 0.0);
-        assert_eq!(my_rect.circumference(), 10.0)
+        assert_approx_eq!(my_rect.circumference(), 10.0)
     }
 
     #[test]
     fn move_point() {
         let mut my_point = Point::new(1.0, 1.0);
         my_point.move_direction(-1.0, -1.0);
-        assert_eq!(my_point.x, 0.0);
-        assert_eq!(my_point.y, 0.0);
+        assert_approx_eq!(my_point.x, 0.0);
+        assert_approx_eq!(my_point.y, 0.0);
     }
 
     #[test]
     fn move_rectangle() {
         let mut my_rect = Rectangle::new(1.0, 1.0, 1.0, 1.0);
         my_rect.move_direction(-1.0, -1.0);
-        assert_eq!(my_rect.center.x, 0.0);
-        assert_eq!(my_rect.center.y, 0.0);
+        assert_approx_eq!(my_rect.center.x, 0.0);
+        assert_approx_eq!(my_rect.center.y, 0.0);
     }
 }
