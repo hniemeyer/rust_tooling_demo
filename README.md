@@ -9,22 +9,25 @@ Run
 cargo build
 ```
 
-in order to build the project. 
-Run 
+in order to build the project.
+Run
 
 ```bash
 cargo run
 ```
+
 to build and execute the program.
-Run 
+Run
 
 ```bash
 cargo test
 ```
+
 to execute the tests.
-Run 
+Run
 
 ```bash
 cargo doc --open
 ```
+
 to build and open the documentation in your standard browser.
