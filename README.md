@@ -22,3 +22,9 @@ Run
 cargo test
 ```
 to execute the tests.
+Run 
+
+```bash
+cargo doc --open
+```
+to build and open the documentation in your standard browser.
